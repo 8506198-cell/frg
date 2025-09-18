@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дервіза 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Орнамент фоном -->
+  <div class="background-pattern left"></div>
+  <div class="background-pattern right"></div>
+
+  <header>
+    <h1>Дервіза 2025</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('elec')">Локація çöller (елек)</button>
+    <button onclick="showSection('hurabie')">Локація dağlar (хурабіе)</button>
+    <button onclick="showSection('ornek')">Локація ormanlar (орьнек)</button>
+    <button onclick="showSection('kures')">Локація deñizler (куреш)</button>
+    <button onclick="showSection('horan')">Локація ozenler (хоран)</button>
+  </nav>
+
+  <main>
+    <section id="elec" class="content-section">
+      <h2>Локація çöller (елек)</h2>
+      <img src="img/elec.jpg" alt="елек">
+      <a href="docs/Локація  çöller  (елек)  берекет .docx" download class="download-btn">📥 Завантажити документ</a>
+    </section>
+
+    <section id="hurabie" class="content-section" style="display:none;">
+      <h2>Локація dağlar (хурабіе)</h2>
+      <img src="img/hurabie.jpg" alt="хурабіе">
+      <a href="docs/Локація dağlar (хурабіе).docx" download class="download-btn">📥 Завантажити документ</a>
+    </section>
+
+    <section id="ornek" class="content-section" style="display:none;">
+      <h2>Локація ormanlar (орьнек)</h2>
+      <img src="img/ornek.jpg" alt="орьнек">
+      <a href="docs/Локація  ormanlar(орьнек) .docx" download class="download-btn">📥 Завантажити документ</a>
+    </section>
+
+    <section id="kures" class="content-section" style="display:none;">
+      <h2>Локація deñizler (куреш)</h2>
+      <img src="img/kures.jpg" alt="куреш">
+      <a href="docs/Локація deñizler (куреш) .docx" download class="download-btn">📥 Завантажити документ</a>
+    </section>
+
+    <section id="horan" class="content-section" style="display:none;">
+      <h2>Локація ozenler (хоран)</h2>
+      <img src="img/horan.jpg" alt="хоран">
+      <a href="docs/Локація ozenler (хоран).docx" download class="download-btn">📥 Завантажити документ</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Дервіза 2025</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.content-section').forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
